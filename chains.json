@@ -1,13 +1,138 @@
 {
+  "0x22e83de4052e3a6c4489c1944d2a8180e560448b4301474bebc944ea431a1317": {
+    "name": "development",
+    "contracts": {
+      "0x0ec1b6b5821a531d29150771526222b3dff37038570aaa855beea3ea2b28d35d": {
+        "address": "0x298134c0697935438517c4b489d3133bbdaf7108",
+        "name":    "SimpleStorage"
+      },
+      "0x839056dbd3963460aec48cf0d73a9e15d9cd424db009c6987aa78f6c83f689e6": {
+        "address": "0x2928c316482e56f7c0959a08f5d5926b22476fe8",
+        "name":    "SolarEnergy"
+      }
+    }
+  },
   "0xb0d319f9801ce6f64872a4d968e17a65e1f43dcbbcb9e062ea04edecbca18e7d": {
     "name": "development",
     "contracts": {
+      "0x11bb0c2ed987b437db51889fdeee19468e4d3bc057b761aebac3b983faf3f10b": {
+        "address": "0x0fde3799819cb1c241be3903c133a21b395efe8a",
+        "name":    "SolarEnergy"
+      },
+      "0x15394c8f37302ef46f2193ca1c62fa581c1936a5309c9065bb7082a0ac70d138": {
+        "address": "0x7f0a15a0fd4376bd852f325c61fd73afc0a06ddf",
+        "name":    "SolarEnergy"
+      },
+      "0x22ac786eebadcdc9bd6def2cdeb45e34aa0890bde31d57c1075c8155a0f14d67": {
+        "address": "0xd965776eb244fb7883b7ef7287764b8f88c2dcd5",
+        "name":    "SimpleStorage"
+      },
+      "0x43023196044ec5831c9823999800ac369e8ff9b359fbb7a989d1eb61139dec9b": {
+        "address": "0x0cdfb0d65327f89408e6ed64af29081270fc9a11",
+        "name":    "SolarEnergy"
+      },
+      "0x4a1d1a9764ee656f7cbbb9bf9e42b113407dae4a8057625eba50dcbdb336b038": {
+        "address": "0x51c77342b546d1cce787c190be2ddca5ab816b4a",
+        "name":    "SimpleStorage"
+      },
+      "0x54251eadef76d27a097ee7522ef567e9c9f11fc5fde379eee60098919412b03b": {
+        "address": "0x64829d4b2a0e7d4617ec109daac817f72ea1b1e7",
+        "name":    "SolarEnergy"
+      },
+      "0x570db1867da9eb5679a185b6f8625234338fe7fb49357d4ebf9633803a50004a": {
+        "address": "0xf821819799f80590aa1466e63424c558e014e092",
+        "name":    "SolarEnergy"
+      },
+      "0x5e09e29f0af020563416a651f05cadd20aeab84c12eb84b1c7fd0de9dd9b9f07": {
+        "address": "0xdbe76267b76f0014c3b853879be073f119f28ecb",
+        "name":    "SimpleStorage"
+      },
+      "0x6aed98b2b22ea5763c44aecb1bcbef262fe9cc1563d2a2e9e29b31ae413141be": {
+        "address": "0xca0703f0ef9c11340cce908eaddc22b705ea41b6",
+        "name":    "SimpleStorage"
+      },
+      "0x7abe7ba6be7eba64d8fff423d8be301d22e17c39fb914fd4f47a2cedc58fa19e": {
+        "address": "0x7d57dc433167c82b1e9fb8c89aa9eecf6e2504cb",
+        "name":    "SimpleStorage"
+      },
       "0x7c01e3fd4d8f4d161efeaa3ecca9c8651fdab8ba8def14d100631071b48a24cc": {
         "address": "0x73d8ed4f30630900d9ec57a8f43a6922787e021d",
         "name":    "SolarEnergy"
       },
+      "0x7ddbb17de4cb180b82dcc70176f9a8c9d961597c65b0a97fad1c15bd791f8aa8": {
+        "address": "0xd8ea6e76c1715db7033dcef68e6cd033969a6df8",
+        "name":    "SimpleStorage"
+      },
+      "0x839b8331b7a9d5ff7ce673be2386c55fa2384070a42f7ff210f8d207e987783b": {
+        "address": "0x27c93a4be60f35c95fc9cd2d77d50f6de48771e1",
+        "name":    "SolarEnergy"
+      },
       "0x86f5bf422556e3107164220a19870798c420179153f586ceff57da04e97b6177": {
         "address": "0x6808a54fe069ad08625e98167a4cf050ae6f124f",
+        "name":    "SimpleStorage"
+      },
+      "0x89ae611c633dc1c93bb5a59013d55e49f87d2ac62b0683e9b83cad4669642cf2": {
+        "address": "0xb7e039bef586640d1dd34cc56bbe79478352369d",
+        "name":    "SolarEnergy"
+      },
+      "0x8c3897fe2c476712915b5f200309a4b44030039fa5bf980ad3b6d966db904073": {
+        "address": "0xaa887953039a224c6153639a1d63a458bd8aeb04",
+        "name":    "SolarEnergy"
+      },
+      "0x923c4df9065e7502187666019434f4556216633429e5e6517821b39f1d8bb792": {
+        "address": "0xacfb8c605a4023370e3a8c26881e9dabc87f1504",
+        "name":    "SimpleStorage"
+      },
+      "0x950f424bcee40b048c99be1adc7cd4231accc8068be580df31e1adb96137af16": {
+        "address": "0x420da46fbeeb867273149ae225dfffbec3ca20a8",
+        "name":    "SimpleStorage"
+      },
+      "0x9e7119becf0b6d9a2ca3746d15de882cc84af8bbb5e734c39ba56900584902b7": {
+        "address": "0x5c1aeff8a81decaff0043a98911ddceaff1c9dcc",
+        "name":    "SolarEnergy"
+      },
+      "0x9f1df523eac3ecd8118a1cc844b8362e81d337bacb0db75764bdc7ea82ddcd1c": {
+        "address": "0x3a7d4a855ab1ef3578d6ead079e9b92c960ef88c",
+        "name":    "SimpleStorage"
+      },
+      "0xb134b5695c0fed9490c0cfeaa06ab09c852a1899a44d20605664a60362442d2a": {
+        "address": "0x84976dbc7e1209d762b274c73d0eaf42b05b357d",
+        "name":    "SolarEnergy"
+      },
+      "0xb1e1cd3eb9e09ce9a4d02ee5d342156ae72d89398a67d0ace6fed8feb2241213": {
+        "address": "0xe79957e8c197d3a71ab47511fcec2dca55cd5fc8",
+        "name":    "SimpleStorage"
+      },
+      "0xbbb6232f7712e8646a0eda82c24a935b4f45ffb1af7b59d1fd85244975ae9f3b": {
+        "address": "0xb69758cfc24733cd913648d69616629e1c674d49",
+        "name":    "SolarEnergy"
+      },
+      "0xbc3a97b98d98d3f793787d2de0ab28d59a91904d5734a9524efdf6e6d2a8c9cc": {
+        "address": "0x63cd2fe0e06a0e53232a8bb8280f7860e060430e",
+        "name":    "SimpleStorage"
+      },
+      "0xc0057f0744176e007858af5fa6f8a286ea4c480cfef9c9a842ca98a48b689e12": {
+        "address": "0x3c5e9fde6f87e62981a196404d31ecf990add049",
+        "name":    "SimpleStorage"
+      },
+      "0xc1a9a8194bfb7392b73ee3f9e2b959d5516ce6dd5e1c2e067f39801e9a8f638a": {
+        "address": "0xf7cd90e0e65236a3ff5eb32e129446c30036496b",
+        "name":    "SolarEnergy"
+      },
+      "0xc8db62897da5f973ec619fb10e6984c975584aa8ccc83c81c042f478c3f9785e": {
+        "address": "0xb3f2eb930da97db44b2464b12fdd6ca0461e0d29",
+        "name":    "SimpleStorage"
+      },
+      "0xc9c57975c9e8969b4e6d466c235722e77d17b8af3650cc9355a6b5fd88c4bfda": {
+        "address": "0x915c8f6303010ba3838ab8991120a61731178b35",
+        "name":    "SolarEnergy"
+      },
+      "0xd554a457297825a74c2fe2a1c26986e7d8007b0d978b9195fb93aa23a84c7b01": {
+        "address": "0xbbcfbd0f41a273bb318fe34339c9b1cbf3909e33",
+        "name":    "SolarEnergy"
+      },
+      "0xfd8ef198a370f771fff736fd458580c26fe6a640c43bc683cd1668b3cb453a28": {
+        "address": "0xcc461b5be4a22947eadf2987fdb91864a895e5c2",
         "name":    "SimpleStorage"
       }
     }
@@ -98,6 +223,51 @@
       "0xf592260c80bc7a50333ef4134b757e13b4d3264d84836678ab3baa9229da10a7": {
         "address": "0x43d0b285ebb570f5edc59ac33d41908736f9785e",
         "name":    "SimpleStorage"
+      }
+    }
+  },
+  "0xef2a60ca7433087ff08a3803644bc8836dd63574c2396d9f6fee9f09256d4a17": {
+    "name": "development",
+    "contracts": {
+      "0x0ec1b6b5821a531d29150771526222b3dff37038570aaa855beea3ea2b28d35d": {
+        "address": "0x0a6ee6cc0cbffa5ca86d1d249d77d28e0124f616",
+        "name":    "SimpleStorage"
+      },
+      "0x15394c8f37302ef46f2193ca1c62fa581c1936a5309c9065bb7082a0ac70d138": {
+        "address": "0x84710c9ed45c31933ff2a3893f20ee78c996c61d",
+        "name":    "SolarEnergy"
+      },
+      "0x1734ed498ff69211ef0f3904516239d25a7343234677fffa3471976c8fa02f6e": {
+        "address": "0x445a8846fb3038c01254b16f5ed4bd63cc626624",
+        "name":    "SolarEnergy"
+      },
+      "0x1bac8ec124bec476bf87fe5e48d4fc8bca83c31d8e9dcf59edb91c370c474ec6": {
+        "address": "0x0543980efc43094d879a986276cac23e7a3ebb65",
+        "name":    "SolarEnergy"
+      },
+      "0x5feae6b3cd00bbbc4661027d38e621ac148a464c831a5511197e3ad3d3b19f67": {
+        "address": "0x533ed1f6feca069a62d132a5eece04ce04ce3aef",
+        "name":    "SimpleStorage"
+      },
+      "0x6aed98b2b22ea5763c44aecb1bcbef262fe9cc1563d2a2e9e29b31ae413141be": {
+        "address": "0xc08394aab535348f7e81f47f08fdec5f07262ef2",
+        "name":    "SimpleStorage"
+      },
+      "0x839056dbd3963460aec48cf0d73a9e15d9cd424db009c6987aa78f6c83f689e6": {
+        "address": "0x084228ceb6d94c80139c601d6171cd63edd97670",
+        "name":    "SolarEnergy"
+      },
+      "0x96bad847633770aa6a747c3fdb9ef3bb5ce1aa31b54c08a86b5d93c2877c7450": {
+        "address": "0x9c164c46b959da9bc44bd0cddcfbaadb4a5bd4ac",
+        "name":    "SimpleStorage"
+      },
+      "0xdfa648472324c5864e68ed5861fc355b48fe2a721b32378a721d72438c32c089": {
+        "address": "0xc31c8e6402f76ecb62cbdd083b08ab996a79b8c4",
+        "name":    "SimpleStorage"
+      },
+      "0xf6af64b7552861a3e7a5c2764216864ac4a3cc85400d992e8cc875eba5916ae2": {
+        "address": "0xac6092cf4c043db233278ac6bc22c18643f9ebbd",
+        "name":    "SolarEnergy"
       }
     }
   }

@@ -1,4 +1,15 @@
 /*globals $, SimpleStorage, document*/
+$(document).ready(function() {
+
+var Web3 = require('web3');
+var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+var abi = [{"constant":false,"inputs":[{"name":"_string","type":"string"}],"name":"setString","outputs":[],"type":"function"},{"constant":true,"inputs":[],"name":"getString","outputs":[{"name":"","type":"string"}],"type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"changedString","type":"string"}],"name":"stringChanged","type":"event"}];
+var sender = "0x687d3e7804f7f04e3181bb742014f6ad385773e5";
+// web3.personal.unlockAccount(sender, "1111");
+// var contract = web3.eth.contract(abi).at(sender);
+// var buyer = web3.eth.contract(abi).at("0x687d3e7804f7f04e3181bb742014f6ad385773e5");
+//connexion au testRPC wallet
+
 
 var addToLog = function(id, txt) {
   $(id + " .logs").append("<br>" + txt);
@@ -8,43 +19,30 @@ var addToSolarLog = function(id, txt) {
   $(id + " .solarlogs").append("<br>" + txt);
 };
 
+
+
 var currentmwh = 2500;
 var threshold = 1700;
-var excess = currentmwh - threshold;
-excess = 0;
-
-// ===========================
-// Blockchain example
-// ===========================
-$(document).ready(function() {
-
-  $("#blockchain button.set").click(function() {
-    var value = parseInt($("#blockchain input.text").val(), 10);
-    SimpleStorage.set(value);
-    addToLog("#blockchain", "SimpleStorage.set(" + value + ")");
-  });
-
-  $("#blockchain button.get").click(function() {
-    SimpleStorage.get().then(function(value) {
-      $("#blockchain .value").html(value.toNumber());
-    });
-    addToLog("#blockchain", "SimpleStorage.get()");
-  });
-
 
 // ===========================
 // My solar energy
 // ===========================
+SolarEnergy.set(currentmwh, threshold);
+
+// var contractInstance = new SolarEnergy({threshold, currentmwh});
+
 $("#blockchain button.setcurrentsolar").click(function() {
     var value = parseInt($("#blockchain input.current").val(), 10);
     currentmwh = value;
+    SolarEnergy.set(currentmwh, threshold);
     // addToSolarLog("#blockchain", "SimpleStorage.set(" + value + ")");
   });
 
   $("#blockchain button.setthresholdsolar").click(function() {
     var value = parseInt($("#blockchain input.threshold").val(), 10);
-    currentmwh = value;
-    // addToSolarLog("#blockchain", "SimpleStorage.set(" + value + ")");  
+    threshold = value;
+    SolarEnergy.set(currentmwh, threshold);
+    // addToSolarLog("#blockchain", "SimpleStorage.set(" + value + ")");
   });
 
   $("#blockchain button.getetherbalance").click(function() {
@@ -55,29 +53,12 @@ $("#blockchain button.setcurrentsolar").click(function() {
   });
 
   $("#blockchain button.sellenergy").click(function() {
-    var address = $("#blockchain input.address").html();
-    SolarEnergy.sellExcessEnergyForEther("0xf78854ef9961ac891b153be685ef91ea3fece182", excess).then(function(bool) {
-      if (bool === true) {
-        $("#blockchain .result").html("Transaction accepted");
-      } else {
-        $("#blockchain .result").html("Transaction refused, not enough ether");
-      }
+    var address = $("#blockchain input.address").val();
+    SolarEnergy.sellExcessEnergyForEther(address).then(function(result) {
+        $("#blockchain .result").html(result);
     // addToSolarLog("#blockchain", "get ether balance: " + value.toNumber());
     });
   });
-
-
-  // $("#blockchain button.addresses").click(function() {
-  //   SolarEnergy.checkAddresses().then(function(arr) {
-  //   newHTML = [];
-  //   $.each(arr, function(index, value) {
-  //     newHTML.push('<span>' + value + '</span>');
-  //   });
-  //   $("#blockchain .result").html(newHTML.join(""));
-
-  //   });
-  // });
-
 });
 
 // ===========================

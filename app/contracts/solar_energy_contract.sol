@@ -4,39 +4,33 @@ contract SolarEnergy {
 
     mapping(address => uint) public coinBalanceOf;
     event CoinTransfer(address sender, address receiver, uint amount);
-    uint public excessToEther;
+    uint currentmwh;
+    uint threshold;
+    uint public excess;
 
     function token(uint supply) {
         coinBalanceOf[msg.sender] = supply;
     }
 
-    function SolarEnergy(uint excessEnergy) {
-          //conversion mwh/ether si nécessaire
-          excessToEther = excessEnergy;
-          coinBalanceOf[msg.sender] += 1000000;
+    function SolarEnergy(uint init) {
+        //conversion mwh/ether si nécessaire
+        excess = currentmwh - threshold;
+        coinBalanceOf[msg.sender] += 1000;
     }
 
-    function sendCoin(address receiver, uint amount) returns (bool sufficient) {
-        if (coinBalanceOf[msg.sender] < amount) return false;
-        coinBalanceOf[msg.sender] -= amount;
-        coinBalanceOf[receiver] += amount;
-        CoinTransfer(msg.sender, receiver, amount);
+    function sellExcessEnergyForEther(address buyer) returns (bool) {
+        if (coinBalanceOf[buyer] < excess || 0 > excess) return false;
+        if (excess < 1) return false;
+        excess = currentmwh - threshold;
+        coinBalanceOf[buyer] -= excess;
+        coinBalanceOf[msg.sender] += excess;
+        CoinTransfer(buyer, msg.sender, excess);
         return true;
     }
 
-    function sellExcessEnergyForEther(address buyer, uint amount) returns (bool sufficient) {
-        if (coinBalanceOf[buyer] < amount || 0 > amount) return false;
-
-        coinBalanceOf[buyer] -= amount;
-        coinBalanceOf[msg.sender] += amount;
-        CoinTransfer(buyer, msg.sender, amount);
-        return true;
-    }
-
-    uint public storedDat;
-
-    function set(uint x) {
-        storedDat = x;
+    function set(uint current, uint thresh) {
+        currentmwh = current;
+        threshold = thresh;
     }
 
     function get() constant returns (uint retVal) {
