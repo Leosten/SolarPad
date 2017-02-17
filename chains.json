@@ -9,6 +9,14 @@
       "0x839056dbd3963460aec48cf0d73a9e15d9cd424db009c6987aa78f6c83f689e6": {
         "address": "0x2928c316482e56f7c0959a08f5d5926b22476fe8",
         "name":    "SolarEnergy"
+      },
+      "0xad0ab10070707a8d9b7c32eae670ce9a0f75e0b6532d576bca60d0fd8059735d": {
+        "address": "0x15e815bee1bbe840657078d1d5d1b06948b63c4b",
+        "name":    "SimpleStorage"
+      },
+      "0xbba64be355967a4578d5dedeab9ad1f5292e0f0d02d1706614c762cf7bd67f22": {
+        "address": "0x399c8244c1aa7d4dd1c7ecc8734156871966f462",
+        "name":    "SolarEnergy"
       }
     }
   },
